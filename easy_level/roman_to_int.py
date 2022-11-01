@@ -1,7 +1,12 @@
 def romanToInt(s):
     """I can be placed before V (5) and X (10) to make 4 and 9. 
        X can be placed before L (50) and C (100) to make 40 and 90. 
-       C can be placed before D (500) and M (1000) to make 400 and 900."""
+       C can be placed before D (500) and M (1000) to make 400 and 900.
+       Сравнииваем два числа i-е и i+1-e
+       Первое числа задаем как итое, второе и плюс первое
+       если первое число больше или равно второму, плюсуем первое число к общей сумме
+       иначе отнимаем
+       на последнейй итерации просто плюсуем первое число к общей сумме"""
     
     digits={"I": 1,
            "V": 5,
